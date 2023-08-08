@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <script src="https://kit.fontawesome.com/e9f64432b6.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" class="icon">
+    <link rel="stylesheet" href="intern.css">
 </head>
 <body class="bg-light">
     
@@ -20,14 +21,14 @@
           <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" id="text" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" id="text" aria-current="page" href="/components/home/index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id="text" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" id="text" aria-current="page" href="/components/intern/intern.html">Interns</a>
-              </li>
+                  <a class="nav-link active" id="text" aria-current="page" href="/components/intern/intern.html">Interns</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="text" aria-current="page" href="#">About</a>
+                </li>
               
               <!-- <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -52,8 +53,51 @@
         </div>
       </nav>
 
+        <!-- student applicants -->
+        <div class="container">
+            <h2 class="mt-5">Applicants</h2>
+            <div class="row">
+              <!-- Student Cards -->
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="/images/interns/profile1.png" class="card-img-top" alt="Profile Picture">
+                  <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <p class="card-text">Skills: HTML, CSS, JavaScript</p>
+                    <p class="card-text">Experience: 2 years</p>
+                    <button class="btn btn-primary btn-sm">View Profile</button>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="/images/interns/profile2.png" class="card-img-top" alt="Profile Picture">
+                  <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Skills: Python, Java, SQL</p>
+                    <p class="card-text">Experience: 3 years</p>
+                    <button class="btn btn-primary btn-sm">View Profile</button>
+                  </div>
+                </div>
+              </div>
 
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="/images/interns/profile3.png" class="card-img-top" alt="Profile Picture">
+                  <div class="card-body">
+                    <h5 class="card-title">Theo Magath</h5>
+                    <p class="card-text">Skills: Secretary</p>
+                    <p class="card-text">Experience: 3 years</p>
+                    <button class="btn btn-primary btn-sm">View Profile</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more student cards as needed -->
+            </div>
+          </div>
+
+      <script src="intern.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
