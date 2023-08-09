@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="https://kit.fontawesome.com/e9f64432b6.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" class="icon">
+    <link rel="stylesheet" href="intern.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-light">
+    
+       <!-- creating the nav-bar section -->
+       <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-primary" id="navbar-brand" href="/components/home/index.html">JobHunt</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="text" aria-current="page" href="/components/home/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" id="text" aria-current="page" href="/components/intern/intern.html">Interns</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" id="text" aria-current="page" href="#">About</a>
+                </li>
+              
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li> -->
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search Candidate" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+        <!-- student applicants -->
+      
+
+
+            <!-- student modal -->
+          <div class="container">
+            <h2>Applicants</h2>
+            <div class="row">
+              <!-- Student Cards -->
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="/images/interns/profile2.png" class="card-img-top" alt="Profile Picture">
+                  <div class="card-body">
+                    <h5 class="card-title">John Doe</h5>
+                    <p class="card-text">Skills: HTML, CSS, JavaScript</p>
+                    <p class="card-text">Experience: 2 years</p>
+                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalJohnDoe">View Profile</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img src="/images/interns/profile1.png" class="card-img-top" alt="Profile Picture">
+                  <div class="card-body">
+                    <h5 class="card-title">Jane Smith</h5>
+                    <p class="card-text">Skills: Python, Java, SQL</p>
+                    <p class="card-text">Experience: 3 years</p>
+                    <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modalJaneSmith">View Profile</button>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more student cards as needed -->
+            </div>
+          </div>
+          
+          <div class="container">
+             <!--john's modal -->
+          <div class="modal fade" id="modalJohnDoe" tabindex="-1" role="dialog" aria-labelledby="modalJohnDoeLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalJohnDoeLabel">John Doe</h5>
+                  <button type="button" class="close btn btn-outline-primary" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <img src="/images/interns/profile2.png" alt="" class="img-fluid rounded" id="johndoe-image">
+                  <p>Skills: HTML, CSS, JavaScript</p>
+                  <p>Experience: 2 years</p>
+                  <p>Education: Bachelor's degree in Computer Science</p>
+                  <p>Summary: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis voluptates molestiae animi suscipit, minima, officia recusandae natus laudantium itaque quaerat quod rerum 
+                    quisquam veritatis cumque omnis? Veritatis quod doloremque placeat.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- jane's modal -->
+          <div class="modal fade" id="modalJaneSmith" tabindex="-1" role="dialog" aria-labelledby="modalJaneSmithLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="modalJaneSmithLabel">Jane Smith</h5>
+                  <button type="button" class="close btn btn-outline-primary" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>Skills: Python, Java, SQL</p>
+                  <p>Experience: 3 years</p>
+                  <p>Education: Master's degree in Computer Engineering</p>
+                  <p>Summary: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod ratione placeat reiciendis nisi autem unde aspernatur libero, 
+                    neque maiores corrupti, aut in voluptas, laboriosam sed temporibus quibusdam nostrum fugit accusamus.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+         
+
+          <div class="footer mt-2">
+            <footer>
+                <p> <span id="year"> </span> © JobHunt. All rights reserved</p>
+            </footer>
+        </div>
+      <script src="intern.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

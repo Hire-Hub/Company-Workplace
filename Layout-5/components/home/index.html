@@ -9,12 +9,12 @@
     <script src="https://kit.fontawesome.com/e9f64432b6.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon" class="icon">
 </head>
-<body>
+<body class="bg-light">
 
     <!-- creating the nav-bar section -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand text-primary" id="navbar-brand" href="#">JobHunt</a>
+          <a class="navbar-brand text-primary" id="navbar-brand" href="/components/home/index.html">JobHunt</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,10 +24,10 @@
                 <a class="nav-link active" id="text" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id="text" aria-current="page" href="#">About</a>
+                <a class="nav-link active" id="text" aria-current="page" href="/components/intern/intern.html">Interns</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" id="text" aria-current="page" href="#">Interns</a>
+                <a class="nav-link active" id="text" aria-current="page" href="#">About</a>
               </li>
               
               <!-- <li class="nav-item">
@@ -83,6 +83,39 @@
       </div>
     </div>
 
+      <!-- display all job posted and creates new ones -->
+      <div class="container mt-5">
+        <h2 class="text text-primary">Previous Jobs</h2>
+        <div class="row">
+          <!-- Job Cards -->
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">UI/UX Designer</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, veritatis?</p>
+                <button class="btn btn-success btn-sm">Available</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Data Scientist</h5>
+                <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe odit dolorum culpa quam possimus? Architecto!</p>
+                <button class="btn btn-danger btn-sm">Taken</button>
+              </div>
+            </div>
+          </div>
+          <!-- Add more job cards as needed -->
+        </div>
+      
+        <!-- Create New Job Button -->
+        <div class="text-center">
+          <a href="#" class="btn btn-primary">Create New Job</a>
+        </div>
+      </div>
+
+
     <!-- creating a contact section for the admin -->
     <div class="container border rounded mt-5">
       <div class="text-center">
@@ -96,15 +129,6 @@
                   <input type="email" id="email" placeholder="myemail.com" class="form-control">
                   <label for="name" class="form-label">Name</label>
                   <input type="name" id="name" placeholder="e.g Nchang" class="form-control">
-                  <label for="subject" class="form-label">Subject</label>
-                  <select name="subject" id="subject" class="form-select">
-                      <!-- the selected keyword in this option serves as a default value or option when choosing from the various inputs
-                      available -->
-                      <option value="pricing">Pricing</option>
-                      <option value="technical" selected>Technical</option>
-                      <option value="other">Other</option>
-                  </select>
-
                   <label for="query">Write a message</label>
                   <textarea name="query" id="query" cols="30" rows="10" class="form-control mt-3"></textarea>
                   <div class="text-center">
@@ -120,6 +144,8 @@
           </div>
       </div>
   </div>
+
+
 
   <div class="footer mt-2">
     <footer>

@@ -59,6 +59,10 @@
     background-size: cover;
 }
 
+.text{
+    text-align: center;
+}
+
 .footer{
     text-align: center;
 }
