@@ -52,11 +52,10 @@
 }
 
 #image{
-    border-radius: 100%;
-    width: 350px;
-    height: 350px;
+    border-radius: 200%;
+    width: 200px;
+    height: 200px;
     /* border: 2px solid black; */
-    background-size: cover;
 }
 
 .text{
