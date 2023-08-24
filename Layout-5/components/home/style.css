@@ -53,13 +53,9 @@
 
 #image{
     border-radius: 200%;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     /* border: 2px solid black; */
-    /* background-size: cover; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .text{
